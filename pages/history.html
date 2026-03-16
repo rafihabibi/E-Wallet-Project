@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Detail Receiver</title>
+    <link rel="stylesheet" href="../style/history.css">
+</head>
+<body>
+    <header>
+        <p id="e-wallet-logo"><img src="../assets/E-wallet-small.png" alt="E-wallet">E-Wallet</p>
+        <div class="profile-grup">
+            <span>Ghaluh Wizard</span>
+            <img src="../assets/ghaluh.png" alt="profile Picture" class="profile-pic">
+            <img src="../assets/down.png" alt="" class="icon-down">
+        </div>
+    </header>
+    
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><img src="../assets/dashboard-trans.png" alt="dashboard logo"><a href="../pages/dashboard.html" class="icon-dash">Dashboard</a></li>
+                <li><img src="../assets/Send-dashboard.png" alt="" ><a href="../pages/transferDetail.html" class="icon-transfer">Transfer</a></li>
+                <li class="active"><img src="../assets/history-white.png" alt="">History</li>
+                <li><img src="../assets/Upload.png" alt=""><a href="../pages/topUp.html"class="topup-icon">Top Up</a></li>
+                <li><img src="../assets/2 User.png" alt=""><a href="../pages/profile.html" class="profile-icon">Profile</a></li>
+                <li class="logout"><img src="../assets/logout.png" alt="logo keluar">Keluar</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="history-wrapper">
+                <div class="page-header">
+                    <img src="../assets/history-transaction.png" alt="clock">
+                    <h2>History Transaction</h2>
+                </div>
+                <div class="history-card">
+                    <div class="history-filter">
+                        <h3>Find Transaction</h3>
+                        <div class="search">
+                                <input type="text" name="search" placeholder="Enter Number or Full Name"><img src="../assets/Search.png" alt="search">
+                            </div>
+                        </div>
+                        <div class="history-list">
+                            <div class="transaction-item">
+                                <div class="trans-profile">
+                                    <img src="../assets/Ghalul1.png" alt="profile">
+                                </div>
+                                <p class="name">Ghalul 1</p>
+                                <p class="phone-number">0821-9082-892</p>
+                                <p class="trans-amounts positive">Rp.90.000</p>
+                                <div class="trans-action">
+                                    <img src="../assets/Trash.png" alt="trash">
+                                </div>
+                          </div>
+                          <div class="transaction-item">
+                                <div class="trans-profile">
+                                    <img src="../assets/Ghalul1.png" alt="profile">
+                                </div>
+                                <p class="name">Cameron Williamson</p>
+                                <p class="phone-number">0821-321-321</p>
+                                <p class="trans-amounts positive">Rp.100.000</p>
+                                <div class="trans-action">
+                                    <img src="../assets/Trash.png" alt="trash">
+                                </div>
+                          </div>
+                          <div class="transaction-item">
+                                <div class="trans-profile">
+                                    <img src="../assets/Ghalul1.png" alt="profile">
+                                </div>
+                                <p class="name">ujang 1</p>
+                                <p class="phone-number">0821-321-554</p>
+                                <p class="trans-amounts negative">Rp.100.000</p>
+                                <div class="trans-action">
+                                    <img src="../assets/Trash.png" alt="trash">
+                                </div>
+                          </div>
+                     <div class="pagination">
+                        <p>show 3 History of 100 History</p>
+                        <div class="page-number">
+                            <p>prev</p>
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>                                        
+                            <p>Next</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

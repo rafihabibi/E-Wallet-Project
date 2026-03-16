@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style/login.css">
+</head>
+<body>
+    <main class="split-container">
+
+        <div class="form-container">
+             <p id="e-wallet-logo"><img src="../assets/E-wallet-small.png" alt="E-wallet">E-Wallet</p>
+             <h2 id="title">Hello Welcome Back 👋</h2>
+             <p id="small-text">Fill out the form correctly or you can login with several option.</p>
+             <button class="btn-sign-in-google"><img src="../assets/icon-google.png" alt="icon google" 
+              class="icon-g"><span>Sign in With Google</span></button>
+             <button class="btn-sign-in-facebook"><img src="../assets/icon-facebook.png" alt="icon facebook" class="icon-fb"><span>Sign in With Facebook</span></button>
+             <div class="separator">or</div>
+             <form action="">
+                <div class="input-group">
+                            <label for="email">Email</label>
+                            <div class="input-wrapper">
+                                 <img src="../assets/Message.png" alt="main-icon" class="input-icon">
+                                 <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                             </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <div class="input-wrapper">
+                                <img src="../assets/Password.png" alt="lock-icon" class="input-icon">
+                                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                                <img src="../assets/Hide.png" alt="eye-icon" class="eye-icon">
+                            </div>  
+                        </div>
+                        <button type="submit" class="btn-login">Login</button>
+                 </form>
+                     <div class="not-have-account">
+                        <p>Not Have An Account? <a href="../pages/register.html">Register</a></p>
+                     </div>
+        </div>
+        <div class="img-container">
+            <img src="../assets/LoginImage.png" alt="logo Image">
+        </div>
+    </main>
+</body>
+</html>

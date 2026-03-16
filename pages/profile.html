@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style/profile.css">
+</head>
+<body>
+    <header>
+        <p id="e-wallet-logo"><img src="../assets/E-wallet-small.png" alt="E-wallet">E-Wallet</p>
+        <div class="profile-grup">
+            <span>Ghaluh Wizard</span>
+            <img src="../assets/ghaluh.png" alt="profile Picture" class="profile-pic">
+            <img src="../assets/down.png" alt="" class="icon-down">
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item btn-profile">
+                    <img src="../assets/2 User.png" alt="Profile"> Profile
+                </a>
+                <a href="#" class="dropdown-item btn-logout">
+                    <img src="../assets/logout.png" alt="Logout"> Keluar
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><img src="../assets/dashboard-trans.png" alt="dashboard logo"><a href="../pages/dashboard.html" class="icon-dash">Dashboard</a></li>
+                <li><img src="../assets/Send-dashboard.png" alt=""><a href="../pages/transfer.html"class="transfer-icon">Transfer</a></li>
+                <li><img src="../assets/history.png" alt=""><a href="../pages/history.html" class="history-icon">History</a></li>
+                <li class="topUp-icon"><img src="../assets/Upload.png" alt="">Top Up</li>
+                <li class="active"><img src="../assets/profile-icon.png" alt=""><a href="../pages/profile.html" class="profile-icon">Profile</a></li>
+                <li class="logout"><img src="../assets/logout.png" alt="logo keluar">Keluar</li>
+            </ul>
+        </aside>
+    <main class="main-content">
+        <div class="profile-card">
+    <h3 class="page-title">Profile Picture</h3>
+
+    <div class="profile-picture-section">
+        <div class="profile-actions">
+            <img src="../assets/ghaluh.png" alt="Profile" class="main-avatar">
+            
+            <div class="action-buttons">
+                <button class="btn-change">
+                    <img src="../assets/edit-icon.png" alt=""> Change Profile
+                </button>
+                <button class="btn-delete">
+                    <img src="../assets/trash-red.png" alt=""> Delete Profile
+                </button>
+            </div>
+        </div>
+        <p class="photo-hint">The profile picture must be 512 x 512 pixels or less</p>
+    </div>
+
+    <form class="profile-form">
+                <div class="input-section">
+                    <label>Full Name</label>
+                    <div class="input-wrapper">
+                        <img src="../assets/User.png" alt="" class="input-icon">
+                        <input type="text" value="Ghaluh Wizard Anggoro"> 
+                    </div>
+                </div>
+                <div class="input-section">
+                    <label>Phone</label>
+                    <div class="input-wrapper">
+                        <img src="../assets/Phone.png" alt="" class="input-icon">
+                        <input type="text" value="627864919129"> 
+                    </div>
+                </div>
+                <div class="input-section">
+                    <label>Email</label>
+                    <div class="input-wrapper">
+                        <img src="../assets/email-icon.png" alt="" class="input-icon">
+                        <input type="text" value="Ghaluh Wizard Anggoro"> 
+                    </div>
+                </div>
+                <div class="security-section">
+                    <label>Password</label>
+                    <a href="#" class="link-blue">Change Password</a>
+                    <label>Pin</label>
+                    <a href="#" class="link-blue">Change Pin</a>
+                </div>
+                <button type="button" class="btn-primary submit-profile">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
