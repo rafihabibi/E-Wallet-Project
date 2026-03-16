@@ -162,6 +162,11 @@ input[type="password"]:hover {
     transition: background-color 0.3s ease;
 }
 
+.btn {
+    text-decoration: none;
+    color: white;
+}
+
 .btn-login:hover {
     background-color: #273fc8;
 }

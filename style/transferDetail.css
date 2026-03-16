@@ -23,6 +23,11 @@ header {
     padding: 20px 40px;
 }
 
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
 .profile-grup {
     display: flex;
     gap: 10px;
@@ -179,9 +184,9 @@ li:hover {
 }
 .transfer-card {
     background-color: #FFFFFF;
-    padding: 30px;
+    padding: 32px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    
 }
 
 .transfer-card h3 {
