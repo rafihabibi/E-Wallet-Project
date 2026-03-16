@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+:root { 
+    --primary-color: #3868fd;
+    --font: 'Montserrat', sans-serif;
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.profile-grup {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-pic  {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-grup .icon-down {
+    width: 15px; 
+    height: auto;
+}
+
+#e-wallet-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#e-wallet-logo img {
+    width: 32px;
+    height: auto;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    padding: 15px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #EAEAEA;
+}
+
+ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #4F5665;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #9d9ea0;
+}
+
+
+.active-dashboard {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.active-dashboard:hover {
+    background-color: #273fc8;
+}
+
+.transfer-icon, .history-icon, .profile-icon, .topUp-icon, .logout {
+    color: #4F5665;
+    text-decoration: none;
+}
+
+.logout {
+    color: #D00000;
+    transition: background-color 0.3s ease;
+}
+
+
+.dashboard-body {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    flex: 6.5;
+    gap: 20px;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #E8E8E8 ;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4F5665;
+}
+
+.card-amount {
+    font-size: 20px;
+    color: #0B132A;
+}
+
+.card-status, status-green {
+    color: #00A700;
+    font-size: 12px;;
+}
+
+.status-red {
+    color: #D00000;
+    font-size: 12px;
+    padding: 4px;
+}
+
+.fast-service {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 2px solid #EAEAEA;
+    border-radius: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 400;
+    border: none;
+    font-family: var(--font);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-action:hover {
+    background-color: #273fc8;
+}
+
+.chart-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #EAEAEA;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+#income-chart {
+    font-weight: 600;
+}
+.chart-filter {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-dropdown {
+    padding: 10px 15px;
+    background-color: #F1F1F1;
+    color: #0B132A;
+    font-family: var(--font);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.filter-dropdown:hover {
+    background-color: darkgrey;
+}
+
+.chart-image {
+    width: 100%;
+    height: auto;
+}
+ .content-right {
+    padding: 10px;
+    flex: 3.5;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.see-all{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tx-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tx-text h5 {
+    color: #0B132A;
+    font-size: 15px;
+}
+
+.tx-text p {
+    color: #888888;
+    font-size: 15px;
+}
+
+.rp-amount.green {
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+.rp-amount.red { 
+    color: #D00000;
+    font-weight: 700;
+}
+.main-content {
+    flex: 1;
+    background-color: #fafbff;
+}
+
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .summary-cards {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+    .dashboard-body {
+        flex-direction: column;
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        flex-direction: column;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .fast-service {
+        flex-direction: column;
+        padding: 12px;
+    }
+    .button-group {
+        flex-direction: row;
+        padding: 10px 12px;
+    }
+    .transaction-list {
+        flex-direction: column;
+    }
+    .chart-filters {
+        flex-direction: flex-end;
+        padding: 10px 12px;
+
+    }
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root { 
+    --primary-color: #3868fd;
+    --font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.profile-grup {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 60px; 
+    right: 0; 
+    background-color: #FFFFFF; 
+    border-radius: 12px;
+    padding: 10px;
+    width: 180px;
+    flex-direction: column; 
+    gap: 5px;
+    z-index: 100; 
+}
+
+.profile-grup:hover .dropdown-menu {
+    display: flex; 
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+
+.btn-profile {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+
+.btn-logout {
+    color: #D00000;
+}
+
+.btn-logout:hover {
+    background-color: #FFF5F5; 
+}
+.profile-pic  {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-grup .icon-down {
+    width: 15px; 
+    height: auto;
+}
+
+#e-wallet-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#e-wallet-logo img {
+    width: 32px;
+    height: auto;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    padding: 15px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #EAEAEA;
+}
+
+ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #4F5665;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-dash, .history-icon, .profile-icon, .icon-transfer {
+    text-decoration: none;
+    color: #4F5665;
+}
+
+li:hover {
+    background-color: #9d9ea0;
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.active:hover {
+    background-color: #273fc8;
+}
+
+.logout {
+    color: #D00000;
+    transition: background-color 0.3s ease;
+}

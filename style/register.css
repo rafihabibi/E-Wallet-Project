@@ -13,7 +13,6 @@ body {
 
 .split-container {
     background-color: var(--primary-color);
-    
     display: flex;
     min-height: 100vh;
 }
@@ -35,9 +34,11 @@ body {
 #e-wallet-logo img {
     width: 32px;
     height: auto;
+    margin-bottom: 5px;
 }
 
 #title {
+    font-weight: 400;
     color:#0B132A;
     font-size: 30px;
     line-height: 100%;
@@ -49,13 +50,13 @@ body {
     color: #4F5665;
     font-size: 16px;
     line-height: 166%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .btn-sign-in-google, .btn-sign-in-facebook {
     display: flex;
     flex-direction: row;
-    padding: 10px 40px;
+    padding: 10px 30px;
     font-weight: 500;
     color: #4F5665;
     width: 100%;
@@ -68,18 +69,20 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: background-color 0.3s ease;
     
     
 }
 
 .btn-sign-in-google:hover {
     background-color: #AAAAAA;
-    transform: scale(1.05);
+    transition: background-color 0.3s ease;
 }
 
 .btn-sign-in-facebook:hover {
     background-color: #AAAAAA;
-    transform: scale(1.05);
+    transition: background-color 0.3s ease;
+
 }
 
 
@@ -123,6 +126,15 @@ input[type="email"], input[type="password"] {
     height: 40px;
     color: #4F5665;
     background-color: #FCFDFE;
+    transition: border 0.3s ease;
+}
+
+input[type="email"]:hover {
+    border: 1px solid black;
+}
+
+input[type="password"]:hover {
+    border: 1px solid black;
 }
 
 .input-icon, .eye-icon {
@@ -150,6 +162,11 @@ input[type="email"], input[type="password"] {
     background-color: var(--primary-color);
     border: 1px solid #ccc;
     border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: #273fc8;
 }
 
 .alredy-have-account {
@@ -172,6 +189,13 @@ input[type="email"], input[type="password"] {
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, #7B9BFF 0%, #3868FD 72%);
+}
 
-
+@media (max-width: 768px){
+    .split-container {
+        flex-direction: column;
+    }
+    .form-container {
+        padding: 20px;
+    }
 }
