@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style/dashboard.css">
+</head>
+<body>
+    <header>
+    <p id="e-wallet-logo"><img src="../assets/E-wallet-small.png" alt="E-wallet">E-Wallet</p>
+        <div class="profile-grup">
+            <span>Ghaluh Wizard</span>
+            <img src="../assets/ghaluh.png" alt="profile Picture" class="profile-pic">
+            <img src="../assets/down.png" alt="" class="icon-down">
+        </div>
+        
+    </header>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li class="active-dashboard"><img src="../assets/dashboard.png" alt="dashboard logo">Dashboard</li>
+                <li ><img src="../assets/Send-dashboard.png" alt=""><a href="../pages/transferDetail.html" class="transfer-icon">Transfer</a></li>
+                <li><img src="../assets/history.png" alt=""><a href="../pages/history.html" class="history-icon">History</a></li>
+                <li ><img src="../assets/Upload.png" alt=""><a href="../pages/topUp.html"class="topUp-icon">Top Up</a></li>
+                <li class="profile-icon"><img src="../assets/2 User.png" alt=""><a href="../pages/profile.html" class="profile-icon">Profile</a></li>
+                <li ><img src="../assets/logout.png" alt="logo keluar"><a href="../pages/login.html"class="logout">Keluar</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="dashboard-body">
+                <div class="content-left">
+                    <div class="summary-cards">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="../assets/balance.png" alt="balance">
+                            <p>Balance</p>
+                        </div>
+                    <h3 class="card-amount">Rp.120.000</h3>
+                    <p class="card-status status-green">+2% <img src="../assets/ArrowRise.png" alt=""> 3 Days Ago</p>
+                    </div>
+                     <div class="card">
+                        <div class="card-header">
+                            <img src="../assets/income.png" alt="income">
+                            <p>Income</p>
+                        </div>
+                    <h3 class="card-amount">Rp.120.000</h3>
+                    <p class="card-status status-green">+11.01% <img src="../assets/ArrowRise.png" alt=""></p>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="../assets/expense.png" alt="">
+                            <p>Expense</p>
+                        </div>
+                    <h3 class="card-amount">Rp.120.000</h3>
+                    <p class="card-status status-red">-5.06%<img src="../assets/arrowDown.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="fast-service">
+                    <h4>Fast Service</h4>
+                    <div class="button-group">
+                         <button class="btn-action"><img src="../assets/topUp.png" alt="">Top Up</button>
+                         <button class="btn-action"><img src="../assets/Send.png" alt="">Transfer</button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-header">
+                    <p id="income-chart">Income Chart</p>
+                         <div class="chart-filters">
+                            <select class="filter-dropdown">
+                                <option>7 Days</option>
+                            </select>
+                            <select class="filter-dropdown">
+                                <option>Income</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <img src="../assets/Chart.png" alt="" style="width: auto; border-radius: 10px; margin-top: 20px; " class="chart-image">
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="transaction-header">
+                    <h4>Transaction History</h4>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+            <div class="transaction-list">
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar1.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>Robert Fox</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount green">+Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar2.png" alt="Floyd Miles" class="avatar">
+                        <div class="tx-text">
+                            <h5>Floyd Miles</h5>
+                            <p>Send</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount red">-Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/ujang.png" alt="ujang" class="avatar">
+                        <div class="tx-text">
+                            <h5>Ujang</h5>
+                            <p>Send</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount red">-Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar4.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>Raulemons</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount green">+Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar4.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>Raulemons</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount green">+Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar4.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>Raulemons</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount green">+Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar4.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>Raulemons</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount green">+Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar4.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>fareh</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount red">+Rp50.000</p>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar4.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>asyam</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount red">+Rp50.000</p>
+                    </div>
+                </div><div class="transaction-item">
+                    <div class="avatar-info">
+                        <img src="../assets/avatar4.png" alt="Robert Fox" class="avatar">
+                        <div class="tx-text">
+                            <h5>hisyam</h5>
+                            <p>Transfer</p>
+                        </div>
+                    </div>
+                    <div class="item-right">
+                        <p class="rp-amount red">+Rp50.000</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
