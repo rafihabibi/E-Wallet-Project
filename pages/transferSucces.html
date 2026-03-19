@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Detail Receiver</title>
+    <link rel="stylesheet" href="../style/enterpinpopup.css">
+</head>
+<body>
+    <header>
+        <p id="e-wallet-logo"><img src="../assets/E-wallet-small.png" alt="E-wallet">E-Wallet</p>
+        <div class="profile-grup">
+            <span>Ghaluh Wizard</span>
+            <img src="../assets/ghaluh.png" alt="profile Picture" class="profile-pic">
+            <img src="../assets/down.png" alt="" class="icon-down">
+        </div>
+    </header>
+    
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><img src="../assets/dashboard-trans.png" alt="dashboard logo"><a href="../pages/dashboard.html" class="icon-dash">Dashboard</a></li>
+                <li class="active"><img src="../assets/send.png" alt="">Transfer</li>
+                <li><img src="../assets/history.png" alt=""><a href="../pages/history.html" class="history-icon">History</a></li>
+                <li class="topUp-icon"><img src="../assets/Upload.png" alt="">Top Up</li>
+                <li class="profile-icon"><img src="../assets/2 User.png" alt=""><a href="../pages/profile.html" class="profile-icon">Profile</a></li>
+                <li class="logout"><img src="../assets/logout.png" alt="logo keluar">Keluar</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="transfer-wrapper">
+                
+                <div class="transfer-header">
+                    <div class="title-area">
+                        <img src="../assets/Send-blue.png" alt="icon transfer">
+                        <h2>Transfer Money</h2>
+                    </div>
+
+                    <ol class="stepper">
+                        <li><span class="step-num">1</span><a href="../pages/transfer.html" class="find-people">Find People</a></li>
+                        <li><span class="step-num active">2</span>Set Nominal</li>
+                        <li><span class="step-num">3</span>Finish</li>
+                    </ol>
+                </div>
+
+                <div class="transfer-card">
+                    <h3>People Information</h3>
+                    
+                    <div class="contact-box">
+                        <div class="contact-profile">
+                            <img src="../assets/Ghalul1.png" alt="" class="transfer-avatar">
+                            <div class="profile-text">
+                                <h5>Ghaluh 1</h5>
+                                <p>2133-2321</p>        
+                                <div class="badge-verified">
+                                    <img src="../assets/verified.png" alt="verified i"><span>Verified</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../assets/Star.png" alt="Star" class="star-icon">
+                    </div>
+
+                    <form class="transfer-form">
+                        <div class="input-section">
+                            <label>Amount</label>
+                            <p class="input-desc">Type the amount you want to transfer and then press continue to the next steps.</p>
+                            <div class="input-wrapper">
+                                <img src="../assets/u_money-bill.png" alt="wallet" class="input-icon">
+                                <input type="number" placeholder="Enter Nominal Transfer">
+                            </div>
+                        </div>
+                        <div class="input-section">
+                            <label>Notes</label>
+                            <p class="input-desc">You can add some notes for this transfer such as payment coffee or something</p>
+                            <textarea placeholder="Enter Some Notes"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit & Transfer</button>
+                    </form>
+                    
+                </div>
+            </section>
+        </main>
+        <div class="overlay-mode">
+        
+        <div class="card">
+            
+            <div class="header-text">
+                <p>TRANSFER TO GHALUH 1</p>
+            </div>
+            <div class="body-form">  
+                <img src="../assets/TransferSucces.png" alt="Transfer Succes" class="img-transfer-succes">
+                <p class="transfer-succes-text">Yeay Transfer <span>Succes</span></p>
+                <p class="trans-text">Thank you for using this application for your financial</p>
+                <button type="submit" class="btn-submit">Done</button>
+                <button type="submit" class="btn-submit">Tranfer Again</button>
+            </div>
+        </div>
+
+    </div>
+    </div>

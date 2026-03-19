@@ -248,7 +248,7 @@ li:hover {
     width: auto;
 }
  .content-right {
-    height: auto;
+    height: 676px;
     padding: 10px;
     flex: 3.5;
     background-color: #FFFFFF;
