@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root { 
+    --primary-color: #3868fd;
+    --font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.profile-grup {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 60px; 
+    right: 0; 
+    background-color: #FFFFFF; 
+    border-radius: 12px;
+    padding: 10px;
+    width: 180px;
+    flex-direction: column; 
+    gap: 5px;
+    z-index: 100; 
+}
+
+.profile-grup:hover .dropdown-menu {
+    display: flex; 
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-profile {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+
+
+.profile-pic  {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    
+}
+
+.profile-grup .icon-down {
+    width: 15px; 
+    height: auto;
+    
+}
+
+#e-wallet-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#e-wallet-logo img {
+    width: 32px;
+    height: auto;
+    
+}
+
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    padding: 15px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #EAEAEA;
+}
+
+ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #4F5665;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-dash, .history-icon, .transfer-icon {
+    text-decoration: none;
+    color: #4F5665;
+}
+
+.profile-icon {
+    text-decoration: none;
+    color: white;
+}
+li:hover {
+    background-color: #9d9ea0;
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+.active:hover {
+    background-color: #273fc8;
+}
+
+.logout {
+    color: #D00000;
+    transition: background-color 0.3s ease;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #fafbff; 
+    padding: 40px; 
+}
+
+
+.page-title { 
+    margin-bottom: 20px; 
+}
+.profile-picture-section h4 {
+     margin-bottom: 10px;
+     }
+.photo-hint { 
+    font-size: 13px; color: #888888; margin-top: 5px; margin-bottom: 30px;
+}
+
+
+.profile-card {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px; 
+}
+
+
+.profile-actions {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.main-avatar {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.btn-change:hover {
+    background-color: #273fc8;
+}
+
+.btn-delete:hover {
+    background-color: #888888;
+}
+
+.btn-change, .btn-delete {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-change {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none; 
+}
+
+.btn-delete {
+    background-color: transparent; 
+    color: #D00000;
+    border: 1px solid #D00000;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-section label {
+    display: block;
+    font-weight: 600;
+    color: #0B132A;
+    margin-bottom: 10px;
+}
+
+.input-desc {
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 15px;
+    padding-left: 45px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-size: 14px;
+    color: #4F5665;
+    background-color: #FCFDFE;
+}
+
+.input-section textarea {
+    width: 100%;
+    padding: 15px;
+    height: 120px;
+    resize: none;
+    border: 1px solid #4F5665;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #273fc8;
+}
+
+.security-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.security-section label {
+    font-weight: 600;
+    color: #0b132A;
+}
+
+.link-blue {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-bottom: 10px; 
+}
+
+.link-blue:hover {
+    color: #273fc8;
+}
