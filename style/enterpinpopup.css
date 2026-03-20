@@ -440,10 +440,16 @@ li:hover {
     border: 1px solid #ccc;
     border-radius: 7px;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .btn-submit:hover {
     background-color: #273fc8;
+}
+
+.href-submit {
+    color: white;
+    text-decoration: none;
 }
 
 .forgot-pin {

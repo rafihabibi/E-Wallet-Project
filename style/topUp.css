@@ -153,3 +153,222 @@ li:hover {
     color: #D00000;
     transition: background-color 0.3s ease;
 }
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px;
+}
+
+.content-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.form-information {
+    padding: 0px 20px;
+}
+.account-information-card {
+    width: 700px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    padding: 20px;
+}
+.account-information h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #E8E8E84D;
+    border-radius: 8px;
+}
+
+.contact-profile img {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+.profile-text h5 {
+    color: #0b132A;
+    margin-bottom: 5px;
+}
+.profile-text p {
+    color: #4F5665;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.badge-verified {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.badge-verified img {
+    width: 14px;
+    height: auto;
+}
+
+.input-section {
+    margin-top: 20px;
+
+}
+
+.input-section label {
+    display: block;
+    font-weight: 600;
+    color: #0B132A;
+    margin-bottom: 5px;
+}
+
+.input-desc {
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 15px;
+    padding-left: 45px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-size: 14px;
+}
+.payment-method-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.payment-method-list p {
+    margin-bottom: 20px;
+}
+.payment {
+    border: 1px solid #E8E8E8;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.payment h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.payment-list-box {
+    padding: 10px;
+}
+.payment-item {
+    width: 100%;
+    height: 50px;
+    background-color: #E8E8E84D;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.payment-item:hover {
+    background-color: #cdcdcd;
+}
+
+.payment-item img {
+    width: 40px;
+}
+
+.payment-row{
+    
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-text {
+    color: #4F5665;
+    font-weight: 700;
+    font-style: bold;
+    margin-bottom: 10px;
+}
+
+.amount-text {
+    color: #0B132A;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+hr {
+    margin: 10px;
+    padding: 0px 0px;
+}
+
+.btn-submit-payment {
+     width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit-payment:hover {
+    background-color: #273fc8;
+}
+
+
+@media (max-width: 768px){
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content-body {
+        grid-template-columns: 1fr;
+    }
+
+    .account-information-card {
+        width: 100%;
+    }
+
+}
